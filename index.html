@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alt-Ends | Explore Alternative Endings</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Overlay / Particles Effect Container -->
+    <div class="bg-overlay"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Alt-Ends</h1>
+            <p>What if things happened differently? Input any event, choice, or history and explore the branching multiverse of outcomes.</p>
+        </header>
+
+        <!-- Input Section -->
+        <main>
+            <div class="input-card">
+                <label for="scenarioInput">Enter a scenario, decision, or turning point:</label>
+                <textarea id="scenarioInput" rows="4" placeholder="e.g., What if humanity never discovered electricity? Or what if I accepted that job in Tokyo?"></textarea>
+                <button id="generateBtn" class="primary-btn">Generate Endings</button>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loader" class="loader hidden">
+                <div class="spinner"></div>
+                <p>Calculating alternate realities...</p>
+            </div>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section hidden">
+                <h2>Branching Realities</h2>
+                <div id="endingsGrid" class="endings-grid">
+                    <!-- Dynamic endings will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Alt-Ends. Step into the infinite multiverse.</p>
+        </footer>
+    </div>
+
+    <!-- External JavaScript link -->
+    <script src="script.js"></script>
+</body>
+</html>
